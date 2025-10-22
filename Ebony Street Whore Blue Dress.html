@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>freepornx.co/v/Ebony-Street-Whore-Blue-Dress.html</title>
+  <style>
+    body {
+      background-color: #0d1117; /* dark charcoal blue-gray */
+      color: #e6edf3; /* soft bluish white text */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #e6edf3;
+      text-shadow: 0 0 8px rgba(0, 150, 255, 0.3);
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 16px 40px;
+      background-color: #2388ff;
+      color: #ffffff;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.15s;
+      box-shadow: 0 4px 12px rgba(35, 136, 255, 0.3);
+    }
+
+    .download-btn:hover {
+      background-color: #1a6ad9;
+      transform: scale(1.04);
+      box-shadow: 0 4px 14px rgba(35, 136, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="videoName">My Sample Video</h1>
+
+  <div class="video-container">
+    <iframe id="videoFrame" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+    <div class="overlay" id="overlay"></div>
+  </div>
+
+  <a id="downloadBtn" class="download-btn">Download</a>
+
+  <script>
+    /* ================================
+       ✏️ EASY SETTINGS — CHANGE BELOW
+    ================================= */
+    const settings = {
+      videoName: "Ebony Street Whore Blue Dress",
+      videoLink: "https://bunkr.cr/e/Npk41tC3BAxQA",
+
+      // 👇 VIDEO LINKS
+      videoFirstClickLink: "https://www.effectivegatecpm.com/k04wr7mfz7?key=efa21cf14b078963e6c2ec2814739d92",   // 1st click
+      videoThirdClickLink: "https://www.effectivegatecpm.com/atph16jrk?key=2ed36b3a73fcc6c035abf58e6e2d2001", // 30s later reappears, next click
+
+      // 👇 DOWNLOAD BUTTON LINKS
+      buttonFirstClickLink: "https://www.effectivegatecpm.com/h9hrt6j1j?key=4ce43d08381c77e6544cedf0e56d89b2",  // 1st click
+      buttonSecondClickLink: "https://www.effectivegatecpm.com/k04wr7mfz7?key=efa21cf14b078963e6c2ec2814739d92",// 2nd click
+      buttonThirdClickLink: "https://get.bunkrr.su/file/49100425" // 3rd click
+    };
+
+    /* ================================
+       ⚙️ APPLY SETTINGS AUTOMATICALLY
+    ================================= */
+    document.getElementById("videoName").innerText = settings.videoName;
+    document.getElementById("videoFrame").src = settings.videoLink;
+
+    // 🎬 Video overlay logic
+    const overlay = document.getElementById("overlay");
+    let videoClickCount = 0;
+
+    overlay.addEventListener("click", () => {
+      videoClickCount++;
+      if (videoClickCount === 1) {
+        window.open(settings.videoFirstClickLink, "_blank");
+        overlay.style.display = "none";
+        setTimeout(() => {
+          overlay.style.display = "block"; // reappear after 30s
+          videoClickCount = 2; // next click = 3rd click
+        }, 30000);
+      } else if (videoClickCount >= 2) {
+        window.open(settings.videoThirdClickLink, "_blank");
+        overlay.style.display = "none";
+        videoClickCount = 0;
+      }
+    });
+
+    // ⤓ Download button logic
+    const downloadBtn = document.getElementById("downloadBtn");
+    let downloadClickCount = 0;
+
+    downloadBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      downloadClickCount++;
+      if (downloadClickCount === 1) {
+        window.open(settings.buttonFirstClickLink, "_blank");
+      } else if (downloadClickCount === 2) {
+        window.open(settings.buttonSecondClickLink, "_blank");
+      } else if (downloadClickCount === 3) {
+        window.open(settings.buttonThirdClickLink, "_blank");
+        downloadClickCount = 0; // reset after 3rd click
+      }
+    });
+  </script>
+
+</body>
+</html>
